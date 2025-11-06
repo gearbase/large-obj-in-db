@@ -1,0 +1,25 @@
+spring:
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    open-in-view: false #MUST HAVE
+  servlet:
+    multipart:
+      max-file-size: -1
+      max-request-size: -1
+      file-size-threshold: 0
+  datasource:
+    url: jdbc:postgresql://localhost:5433/test
+    username: test
+    password: test
+    driver-class-name: org.postgresql.Driver
+  liquibase:
+    enabled: false
+#logging.level.org.hibernate.SQL: trace
+#logging.level.org.hibernate.type.descriptor.sql: trace
+#logging.level.org.postgresql.core.v3.QueryExecutorImpl: trace
+logging:
+  level:
+    ru.gearbase: debug
