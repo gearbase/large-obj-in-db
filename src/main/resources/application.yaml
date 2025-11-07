@@ -22,4 +22,4 @@ spring:
 #logging.level.org.postgresql.core.v3.QueryExecutorImpl: trace
 logging:
   level:
-    ru.gearbase: debug
+    root: info
